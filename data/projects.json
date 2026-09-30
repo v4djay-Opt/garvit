@@ -1,0 +1,502 @@
+[
+  {
+    "slug": "palm-city-haridwar",
+    "name": "Palm City Haridwar",
+    "type": "plot",
+    "websiteUrl": "https://palmcityharidwar.co.in/",
+    "visible": true,
+    "featured": true,
+    "order": 1,
+    "location": {
+      "label": "Salempur Mahdood, Haridwar",
+      "area": "Salempur Mahdood",
+      "city": "Haridwar",
+      "state": "Uttarakhand"
+    },
+    "shortDescription": "Residential plots in Haridwar, with a choice of plot sizes in a planned township.",
+    "positioningStatement": "Residential plots in Haridwar, with a choice of plot sizes in a planned township.",
+    "media": {
+      "heroImage": {
+        "src": "/projects/palm-city-haridwar/listing.webp",
+        "alt": "Palm City entrance and landscaped driveway, from the project website.",
+        "width": 1180,
+        "height": 896,
+        "caption": "Image from project website"
+      },
+      "gallery": [
+        {
+          "src": "/projects/palm-city-haridwar/gallery-1.webp",
+          "alt": "Palm City project gallery view of the development.",
+          "width": 1400,
+          "height": 933,
+          "caption": "Image from project website"
+        },
+        {
+          "src": "/projects/palm-city-haridwar/gallery-2.webp",
+          "alt": "Palm City project gallery view of the neighbourhood.",
+          "width": 1400,
+          "height": 1050,
+          "caption": "Image from project website"
+        },
+        {
+          "src": "/projects/palm-city-haridwar/gallery-3.webp",
+          "alt": "Palm City project gallery view of the township.",
+          "width": 1185,
+          "height": 896,
+          "caption": "Image from project website"
+        }
+      ]
+    },
+    "story": {
+      "eyebrow": "Residential plots",
+      "heading": "Your space to build in Haridwar.",
+      "body": [
+        "Palm City is a residential plotted development at IP-2, near Danco Chowk in Salempur Mahdood, Haridwar. The township offers four plot-size options, from 100 to 300 square yards.",
+        "Its project website lists gated access, internal roads, landscaped parks and utility connections. Choose a plot size to suit your home plans and arrange a visit to explore the development."
+      ],
+      "image": {
+        "src": "/projects/palm-city-haridwar/listing.webp",
+        "alt": "Palm City entrance and landscaped driveway, from the project website.",
+        "width": 1180,
+        "height": 896,
+        "caption": "Image from project website"
+      }
+    },
+    "highlights": [
+      {
+        "label": "Plot sizes",
+        "value": "100–300 sq yd"
+      },
+      {
+        "label": "Property type",
+        "value": "Residential plots"
+      },
+      {
+        "label": "Setting",
+        "value": "Gated township"
+      },
+      {
+        "label": "Pricing",
+        "value": "On request"
+      }
+    ],
+    "amenities": [
+      {
+        "title": "Gated access",
+        "description": "Controlled entry and security, as listed by the project."
+      },
+      {
+        "title": "Internal roads",
+        "description": "Road access within the development."
+      },
+      {
+        "title": "Landscaped parks",
+        "description": "Green spaces for everyday recreation."
+      },
+      {
+        "title": "Commercial spaces",
+        "description": "Commercial provision within the township."
+      },
+      {
+        "title": "Electricity",
+        "description": "Electricity connections are listed among the project facilities."
+      },
+      {
+        "title": "Water supply",
+        "description": "Water supply is included in the listed infrastructure."
+      }
+    ],
+    "locationDetail": {
+      "address": "IP-2, near Danco Chowk, Salempur Mahdood, Haridwar, Uttarakhand",
+      "mapEmbedQuery": "29.9522222,78.0458333",
+      "connectivity": [
+        "Located in Salempur Mahdood, Haridwar.",
+        "The project website lists road connections towards Rishikesh, Dehradun and Delhi."
+      ],
+      "coordinates": {
+        "lat": 29.9522222,
+        "lng": 78.0458333
+      },
+      "mapUrl": "https://maps.app.goo.gl/tu5f7vyUwnqZAoNn9"
+    },
+    "specifications": [
+      {
+        "group": "Plot options",
+        "items": [
+          {
+            "label": "100 sq yd",
+            "value": "900 sq ft"
+          },
+          {
+            "label": "150 sq yd",
+            "value": "1350 sq ft"
+          },
+          {
+            "label": "200 sq yd",
+            "value": "1800 sq ft"
+          },
+          {
+            "label": "300 sq yd",
+            "value": "2700 sq ft"
+          }
+        ]
+      },
+      {
+        "group": "Project information",
+        "items": [
+          {
+            "label": "Price",
+            "value": "Contact the project team for current pricing."
+          },
+          {
+            "label": "RERA number listed on project website",
+            "value": "UKREP03260000722"
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "enquire": true,
+      "siteVisit": true,
+      "callback": true,
+      "brochure": false,
+      "whatsapp": false
+    },
+    "seo": {
+      "title": "Palm City Haridwar | Residential Plots",
+      "description": "Residential plots in Haridwar, with a choice of plot sizes in a planned township."
+    }
+  },
+  {
+    "slug": "vantara-farms",
+    "name": "Vantara Farms",
+    "type": "farm-house",
+    "websiteUrl": "https://vantarafarms.co.in/",
+    "visible": true,
+    "featured": true,
+    "order": 2,
+    "location": {
+      "label": "Near Haridwar",
+      "city": "Near Haridwar"
+    },
+    "shortDescription": "Farm houses near Haridwar, designed around private living spaces and green surroundings.",
+    "positioningStatement": "Farm houses near Haridwar, designed around private living spaces and green surroundings.",
+    "media": {
+      "heroImage": {
+        "src": "/projects/vantara-farms/listing.webp",
+        "alt": "Representative timber-clad house shown on the Vantara Farms website.",
+        "width": 1400,
+        "height": 933,
+        "caption": "Representative image"
+      },
+      "gallery": [
+        {
+          "src": "/projects/vantara-farms/farmhouse-dusk.webp",
+          "alt": "Representative contemporary house illuminated at dusk.",
+          "width": 1400,
+          "height": 933,
+          "caption": "Representative image"
+        },
+        {
+          "src": "/projects/vantara-farms/interior-open.webp",
+          "alt": "Representative open-plan living room with wooden floors and a staircase.",
+          "width": 1400,
+          "height": 933,
+          "caption": "Representative image"
+        },
+        {
+          "src": "/projects/vantara-farms/green-park.webp",
+          "alt": "Representative tree-lined park path.",
+          "width": 1400,
+          "height": 933,
+          "caption": "Representative image"
+        }
+      ]
+    },
+    "story": {
+      "eyebrow": "Private farm houses",
+      "heading": "A home with room to slow down.",
+      "body": [
+        "Vantara Farms offers 31 constructed farm houses in Phase 1, each on a 5,400 sq ft plot. Developed by GARVIT INFRA CONSTRUCTIONS LLP, the project combines private homes with shared leisure and wellness facilities.",
+        "The development has a 40 ft entry road and 30 ft internal roads. Its location near Haridwar offers access towards Najibabad and Kotdwar, with green surroundings and space for outdoor living."
+      ],
+      "image": {
+        "src": "/projects/vantara-farms/farmhouse-dusk.webp",
+        "alt": "Representative contemporary house illuminated at dusk.",
+        "width": 1400,
+        "height": 933,
+        "caption": "Representative image"
+      }
+    },
+    "highlights": [
+      {
+        "label": "Phase 1",
+        "value": "31 farm houses"
+      },
+      {
+        "label": "Plot size",
+        "value": "5,400 sq ft"
+      },
+      {
+        "label": "Offering",
+        "value": "Constructed home"
+      },
+      {
+        "label": "Listed starting price",
+        "value": "₹1.49 Cr",
+        "description": "Confirm current pricing and availability with the project team."
+      }
+    ],
+    "amenities": [
+      {
+        "title": "Clubhouse",
+        "description": "A shared setting for gatherings and leisure."
+      },
+      {
+        "title": "Indoor games",
+        "description": "Recreation spaces for friends and family."
+      },
+      {
+        "title": "Open gym",
+        "description": "An outdoor fitness facility."
+      },
+      {
+        "title": "Yoga & meditation centre",
+        "description": "A dedicated space for wellness."
+      },
+      {
+        "title": "Green parks",
+        "description": "Landscaped open spaces within the community."
+      }
+    ],
+    "locationDetail": {
+      "address": "Near Haridwar, with access towards Najibabad and Kotdwar",
+      "coordinates": {
+        "lat": 29.71,
+        "lng": 78.29
+      },
+      "mapEmbedQuery": "29.710000,78.290000",
+      "connectivity": [
+        "Project location: 29.710000, 78.290000.",
+        "Access towards Haridwar, Najibabad and Kotdwar.",
+        "Eastern Canal and the JhilMil Lake area are listed among nearby surroundings."
+      ]
+    },
+    "specifications": [
+      {
+        "group": "Home & community",
+        "items": [
+          {
+            "label": "Phase 1",
+            "value": "31 constructed farm houses"
+          },
+          {
+            "label": "Plot size per home",
+            "value": "5,400 sq ft"
+          },
+          {
+            "label": "Listed starting price",
+            "value": "₹1.49 Cr — confirm current offer with the project team."
+          }
+        ]
+      },
+      {
+        "group": "Access & development",
+        "items": [
+          {
+            "label": "Entry road",
+            "value": "40 ft"
+          },
+          {
+            "label": "Internal roads",
+            "value": "30 ft"
+          },
+          {
+            "label": "Developer",
+            "value": "GARVIT INFRA CONSTRUCTIONS LLP"
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "enquire": true,
+      "siteVisit": true,
+      "callback": true,
+      "brochure": false,
+      "whatsapp": false
+    },
+    "seo": {
+      "title": "Vantara Farms | Farm Houses near Haridwar",
+      "description": "Farm houses near Haridwar, designed around private living spaces and green surroundings."
+    }
+  },
+  {
+    "slug": "palm-street-phase-02",
+    "name": "Palm Street Phase 02",
+    "type": "plot",
+    "status": "ongoing",
+    "visible": true,
+    "featured": true,
+    "order": 3,
+    "location": {
+      "label": "IP-2 SIDCUL, Haridwar",
+      "area": "IP-2 SIDCUL, near Denso Chowk",
+      "city": "Haridwar",
+      "state": "Uttarakhand"
+    },
+    "shortDescription": "Residential plots from 880 to 1,350 sq ft at IP-2 SIDCUL, near Denso Chowk, Haridwar.",
+    "positioningStatement": "A planned residential address in the SIDCUL corridor, with five plot-size options.",
+    "media": {
+      "heroImage": {
+        "src": "/images/concepts/plots-v1.webp",
+        "alt": "AI-generated illustration of landscaped plots; not a photograph of Palm Street Phase 02.",
+        "width": 960,
+        "height": 1200,
+        "caption": "AI-generated concept — not project photography"
+      }
+    },
+    "story": {
+      "eyebrow": "Residential plots",
+      "heading": "Your plans. Your plot. Your next address.",
+      "body": [
+        "Palm Street Phase 02 is a plotted residential development at IP-2 SIDCUL, near Denso Chowk in Haridwar. The supplied project content describes approximately 5.12 acres of planned development, with plots measuring 880, 950, 1,000, 1,170 and 1,350 sq ft.",
+        "The supplied brochure information lists the project as under construction. Its location in the SIDCUL corridor provides access towards shopping, residential neighbourhoods and major Haridwar destinations.",
+        "The listed rate is ₹3,977 per sq ft, with a ₹1,00,000 booking amount. Pricing, availability, approvals and possession timing should be confirmed with the project sales team."
+      ]
+    },
+    "highlights": [
+      {
+        "label": "Plot sizes",
+        "value": "880–1,350 sq ft"
+      },
+      {
+        "label": "Project area",
+        "value": "5.12 acres"
+      },
+      {
+        "label": "Indicative starting value",
+        "value": "₹34,99,760",
+        "description": "880 sq ft at ₹3,977 per sq ft; taxes and applicable charges extra."
+      },
+      {
+        "label": "Booking amount",
+        "value": "₹1,00,000"
+      }
+    ],
+    "locationDetail": {
+      "address": "IP-2 SIDCUL, near Denso Chowk, Haridwar, Uttarakhand",
+      "mapEmbedQuery": "29.9522222,78.0458333",
+      "connectivity": [
+        "Located in the IP-2 SIDCUL corridor near Denso Chowk.",
+        "The supplied content lists Pentagon Mall, Shivalik Nagar and BHEL Township among nearby destinations.",
+        "Haridwar Bus Stand, Har Ki Pauri, Mansa Devi Temple, Chandi Devi Temple and Crystal World are also listed as accessible destinations."
+      ],
+      "coordinates": {
+        "lat": 29.9522222,
+        "lng": 78.0458333
+      },
+      "mapUrl": "https://maps.app.goo.gl/tu5f7vyUwnqZAoNn9"
+    },
+    "specifications": [
+      {
+        "group": "Plot sizes & indicative values",
+        "items": [
+          {
+            "label": "880 sq ft",
+            "value": "₹34,99,760"
+          },
+          {
+            "label": "950 sq ft",
+            "value": "₹37,78,150"
+          },
+          {
+            "label": "1,000 sq ft",
+            "value": "₹39,77,000"
+          },
+          {
+            "label": "1,170 sq ft",
+            "value": "₹46,53,090"
+          },
+          {
+            "label": "1,350 sq ft",
+            "value": "₹53,68,950"
+          }
+        ]
+      },
+      {
+        "group": "Pricing & charges",
+        "items": [
+          {
+            "label": "Listed rate",
+            "value": "₹3,977 per sq ft"
+          },
+          {
+            "label": "Booking amount",
+            "value": "₹1,00,000"
+          },
+          {
+            "label": "PLC charges",
+            "value": "None, as stated in the supplied content."
+          },
+          {
+            "label": "Additional charges",
+            "value": "Government taxes and applicable registration-related charges are extra."
+          }
+        ]
+      },
+      {
+        "group": "Payment schedule in supplied content",
+        "items": [
+          {
+            "label": "At booking",
+            "value": "₹1,00,000"
+          },
+          {
+            "label": "Within 15 days",
+            "value": "₹5,00,000"
+          },
+          {
+            "label": "Within 2 months",
+            "value": "50% payment — confirm how earlier payments are adjusted."
+          },
+          {
+            "label": "At registration",
+            "value": "Remaining balance"
+          }
+        ]
+      },
+      {
+        "group": "Project information supplied",
+        "items": [
+          {
+            "label": "Project area",
+            "value": "Approximately 5.12 acres"
+          },
+          {
+            "label": "Status",
+            "value": "Under construction"
+          },
+          {
+            "label": "Listed RERA number",
+            "value": "UKREP03260000722"
+          },
+          {
+            "label": "Listed HRDA approval",
+            "value": "HRDA/L/0081/24-25"
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "enquire": true,
+      "siteVisit": true,
+      "callback": true,
+      "brochure": false,
+      "whatsapp": false
+    },
+    "seo": {
+      "title": "Palm Street Phase 02 Haridwar | Residential Plots in IP-2 SIDCUL",
+      "description": "Explore Palm Street Phase 02 at IP-2 SIDCUL, near Denso Chowk, Haridwar. Residential plots from 880 to 1,350 sq ft, project details and enquiries."
+    }
+  }
+]

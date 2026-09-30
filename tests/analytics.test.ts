@@ -1,0 +1,20 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { captureAttribution, consentCommand, setTrackingAllowed, track } from "../lib/analytics/client";
+test("attribution survives navigation and analytics stays consent gated", () => {
+  const stored = new Map<string, string>();
+  const win = { dataLayer: [] as unknown[] };
+  Object.defineProperty(globalThis, "window", { configurable: true, value: win });
+  Object.defineProperty(globalThis, "location", { configurable: true, value: { search: "?utm_source=campaign&email=private", href: "https://test.local/?utm_source=campaign&email=private" } });
+  Object.defineProperty(globalThis, "document", { configurable: true, value: { referrer: "https://search.local/?private=value" } });
+  Object.defineProperty(globalThis, "sessionStorage", { configurable: true, value: { getItem: (key: string) => stored.get(key), setItem: (key: string, value: string) => stored.set(key, value) } });
+  const first = captureAttribution();
+  assert.equal(first.utmSource, "campaign"); assert.equal(first.landingUrl, "https://test.local/"); assert.equal(first.referrer, "https://search.local/");
+  Object.defineProperty(globalThis, "location", { configurable: true, value: { search: "", href: "https://test.local/contact" } });
+  assert.deepEqual(captureAttribution(), first);
+  consentCommand("default", false); const command = Array.from(win.dataLayer[0] as ArrayLike<unknown>);
+  assert.equal(command[0], "consent"); assert.equal((command[2] as Record<string, string>).analytics_storage, "denied");
+  const before = win.dataLayer.length; track("lead_submit", { form_type: "enquiry" }); assert.equal(win.dataLayer.length, before);
+  setTrackingAllowed(true); track("lead_submit", { form_type: "enquiry" }); assert.equal(win.dataLayer.length, before + 1);
+  setTrackingAllowed(false); track("phone_click"); assert.equal(win.dataLayer.length, before + 1);
+});

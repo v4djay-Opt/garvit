@@ -1,0 +1,108 @@
+{
+  "_notice": "PLACEHOLDER \u2014 replace all values before production launch",
+  "hero": {
+    "eyebrow": "Haridwar, Uttarakhand",
+    "headline": "Where land meets legacy.",
+    "subline": "Crafting premium residential experiences in the spiritual capital of Uttarakhand.",
+    "primaryCta": {
+      "label": "Explore Projects",
+      "href": "/projects"
+    },
+    "secondaryCta": {
+      "label": "Discover Garvit",
+      "href": "/about"
+    },
+    "posterImage": {
+      "src": "/images/hero/home-hero.jpg",
+      "alt": "Aerial view of a river winding between green hills and a riverside town.",
+      "width": 1920,
+      "height": 1080
+    },
+    "video": {
+      "mp4": "/videos/home-hero.mp4",
+      "poster": "/images/hero/home-hero.jpg"
+    }
+  },
+  "manifesto": {
+    "eyebrow": "Our Philosophy",
+    "statement": "We don't just build properties \u2014 we create enduring addresses.",
+    "body": [
+      "Every Garvit Buildtech project is shaped by a deep respect for land, context, and the people who will call it home. We blend timeless design with modern living to create spaces that inspire.",
+      "From master planning to final handover, our commitment to quality, transparency, and customer experience remains unwavering."
+    ]
+  },
+  "categories": [
+    {
+      "type": "plot",
+      "label": "Plots",
+      "tagline": "Prime residential plots in Haridwar's most coveted locations.",
+      "image": {
+        "src": "/images/concepts/plots-v1.webp",
+        "alt": "Illustrative concept of green land parcels with stone boundaries and a tree-lined access lane.",
+        "width": 960,
+        "height": 1200,
+        "caption": "AI-generated concept"
+      }
+    },
+    {
+      "type": "farm-house",
+      "label": "Farm House",
+      "tagline": "Private farm houses with space to unwind, surrounded by nature.",
+      "image": {
+        "src": "/projects/vantara-farms/listing.webp",
+        "alt": "Representative timber-clad house shown on the Vantara Farms website.",
+        "width": 1400,
+        "height": 933,
+        "caption": "Representative image"
+      }
+    }
+  ],
+  "haridwarStory": {
+    "eyebrow": "Haridwar",
+    "heading": "A city where heritage meets modern living.",
+    "body": [
+      "Nestled on the banks of the Ganges, Haridwar offers a rare blend of spiritual significance and modern infrastructure \u2014 making it one of Uttarakhand's most sought-after addresses.",
+      "From seamless connectivity to Dehradun and Delhi, to a thriving lifestyle ecosystem, the city is becoming the definitive destination for premium residential developments."
+    ],
+    "image": {
+      "src": "/images/concepts/riverscape-v1.webp",
+      "alt": "Imagined riverside landscape with stone steps, a pavilion and misty wooded hills.",
+      "width": 1536,
+      "height": 1024,
+      "caption": "AI-generated concept"
+    }
+  },
+  "philosophy": {
+    "eyebrow": "How We Build",
+    "heading": "Built on four pillars of excellence.",
+    "pillars": [
+      {
+        "number": "01",
+        "title": "Planning",
+        "body": "Every project begins with meticulous master planning \u2014 understanding the land, the context, and the community it will serve."
+      },
+      {
+        "number": "02",
+        "title": "Quality",
+        "body": "We use only the finest materials and work with trusted partners to ensure every detail meets our exacting standards."
+      },
+      {
+        "number": "03",
+        "title": "Transparency",
+        "body": "Clear communication, honest timelines, and complete visibility into every stage of your investment journey."
+      },
+      {
+        "number": "04",
+        "title": "Customer Experience",
+        "body": "Your experience matters as much as the finished product. We are here for you, from first enquiry to final handover."
+      }
+    ]
+  },
+  "closingCta": {
+    "statement": "Your legacy begins with the right address.",
+    "primaryCta": {
+      "label": "Schedule a Site Visit",
+      "href": "/contact?intent=site-visit#enquiry"
+    }
+  }
+}

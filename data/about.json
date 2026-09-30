@@ -1,0 +1,69 @@
+{
+  "_notice": "Draft brand copy. Mission and vision await client review. Director names, portraits and biographies have not yet been supplied.",
+  "meta": {
+    "title": "About Garvit Buildtech | Premium Real Estate in Haridwar",
+    "description": "Garvit Buildtech creates premium residential experiences in Haridwar with a focus on quality, transparency, and timeless design."
+  },
+  "hero": {
+    "eyebrow": "About Us",
+    "statement": "Built on trust, shaped by vision."
+  },
+  "story": {
+    "eyebrow": "Our Story",
+    "heading": "A vision for premium living in Haridwar.",
+    "body": [
+      "Founded with a singular purpose — to redefine how people experience residential spaces in Uttarakhand — Garvit Buildtech brings together planning precision, design sensibility, and execution discipline.",
+      "Every project is a response to how people want to live: closer to nature, connected to city life, and surrounded by thoughtful amenities."
+    ],
+    "image": {
+      "src": "/images/concepts/about-v1.webp",
+      "alt": "Illustrative courtyard concept with carved stone columns, timber screens and a mature tree.",
+      "width": 1536,
+      "height": 1024,
+      "caption": "AI-generated concept"
+    }
+  },
+  "approach": {
+    "eyebrow": "How We Work",
+    "heading": "Principles that guide every decision.",
+    "pillars": [
+      {
+        "number": "01",
+        "title": "Context-First Design",
+        "body": "We design around land, light, and lifestyle rather than imposing generic layouts."
+      },
+      {
+        "number": "02",
+        "title": "Execution Excellence",
+        "body": "Strong partnerships, material integrity, and quality checks at every milestone."
+      },
+      {
+        "number": "03",
+        "title": "Long-Term Relationship",
+        "body": "From first interaction to post-handover support, we stay with our customers."
+      }
+    ]
+  },
+  "mission": {
+    "heading": "Thoughtful places. Lasting value.",
+    "body": "Our mission is to create well-planned residential spaces through considered design, responsible execution and clear communication—helping people make confident decisions about where they live."
+  },
+  "vision": {
+    "heading": "A better way to call Haridwar home.",
+    "body": "Our vision is to shape communities where modern living and the character of Haridwar belong together, with enduring quality, green surroundings and a strong sense of place."
+  },
+  "leadership": {
+    "heading": "The people behind the promise.",
+    "introduction": "Meet the two directors behind Garvit Buildtech.",
+    "directors": [
+      {
+        "id": "director-01",
+        "role": "Director"
+      },
+      {
+        "id": "director-02",
+        "role": "Director"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "garvit-buildtech",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Garvit Buildtech — premium real estate developer website",
+  "engines": {
+    "node": ">=24.0.0 <25.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "validate:content": "node --import tsx scripts/validate-content.ts",
+    "prebuild": "npm run validate:content",
+    "verify": "npm run validate:content && npm run typecheck && npm run lint && npm test",
+    "test": "node --import tsx --test tests/*.test.ts tests/*.test.tsx",
+    "test:browser": "playwright test",
+    "validate:release": "node --import tsx scripts/validate-content.ts --release"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "next": "16.3.5",
+    "nodemailer": "10.0.10",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^24.0.0",
+    "@types/nodemailer": "^6.4.14",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.4",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "16.3.5",
+    "lighthouse": "^13.5.0",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.19.3",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "typescript": "5.9.3"
+  }
+}

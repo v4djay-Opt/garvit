@@ -1,0 +1,60 @@
+{
+  "_notice": "PLACEHOLDER — replace all values before production launch",
+  "brand": {
+    "name": "Garvit Buildtech",
+    "tagline": "Building Haridwar's finest addresses.",
+    "logoText": "Garvit Buildtech"
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/",
+      "visible": true
+    },
+    {
+      "label": "About",
+      "href": "/about",
+      "visible": true
+    },
+    {
+      "label": "Projects",
+      "href": "/projects",
+      "visible": true
+    },
+    {
+      "label": "Testimonials",
+      "href": "/testimonials",
+      "visible": false
+    },
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "visible": true
+    }
+  ],
+  "contact": {
+    "address": "Palm City, IP-2 SIDCUL, near Denso Chowk, Haridwar, Uttarakhand",
+    "phone": "PLACEHOLDER",
+    "email": "PLACEHOLDER@yourdomain.com",
+    "whatsappNumber": "PLACEHOLDER",
+    "workingHours": "PLACEHOLDER",
+    "mapEmbedQuery": "29.9522222,78.0458333",
+    "mapUrl": "https://maps.app.goo.gl/tu5f7vyUwnqZAoNn9"
+  },
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "youtube": ""
+  },
+  "seo": {
+    "defaultTitle": "Garvit Buildtech — Premium Properties in Haridwar",
+    "titleTemplate": "%s | Garvit Buildtech",
+    "defaultDescription": "Garvit Buildtech develops premium residential plots and farm houses in Haridwar, Uttarakhand.",
+    "canonicalBase": "https://yourdomain.com",
+    "ogImage": "/images/og-default.jpg"
+  },
+  "featureFlags": {
+    "showTestimonials": false,
+    "showScrollSmoother": false
+  }
+}

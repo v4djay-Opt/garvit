@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "garvit-nextjs",
+      "runtimeExecutable": "/opt/homebrew/opt/node@24/bin/node",
+      "runtimeArgs": ["node_modules/.bin/next", "dev"],
+      "port": 3000,
+      "url": "http://localhost:3000"
+    },
+    {
+      "name": "garvit-preview-attach",
+      "url": "http://localhost:3000"
+    }
+  ]
+}

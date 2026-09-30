@@ -1,0 +1,151 @@
+{
+  "privacy": {
+    "approved": false,
+    "lastUpdated": "PLACEHOLDER — awaiting approved legal copy",
+    "sections": [
+      {
+        "heading": "1. Who We Are",
+        "body": [
+          "PLACEHOLDER — Insert the full legal name of the data controller (e.g. 'Garvit Buildtech Private Limited'), its registered address, and a contact email for privacy-related requests."
+        ]
+      },
+      {
+        "heading": "2. What Personal Data We Collect",
+        "body": [
+          "When you submit an enquiry form on this website, we collect:",
+          "• Your full name",
+          "• Your phone number",
+          "• Your email address (optional)",
+          "• The subject of your enquiry (e.g. a specific project)",
+          "• Technical metadata including your approximate IP address region and the page you submitted the form from.",
+          "We do not collect payment information, government identification, or sensitive personal data."
+        ]
+      },
+      {
+        "heading": "3. How We Use Your Data",
+        "body": [
+          "We use the data you submit solely to respond to your real estate enquiry, schedule site visits, or deliver requested documents such as brochures.",
+          "We do not use your data for automated profiling, algorithmic decision-making, or targeted advertising."
+        ]
+      },
+      {
+        "heading": "4. Who Sees Your Data",
+        "body": [
+          "Your enquiry is delivered via email to the Garvit Buildtech sales team. It is not shared with third parties, sold, or used for any purpose beyond responding to your enquiry.",
+          "PLACEHOLDER — if you use any third-party CRM, email service provider, or analytics tool that processes personal data, list it here with a link to their privacy policy."
+        ]
+      },
+      {
+        "heading": "5. How Long We Keep Your Data",
+        "body": [
+          "PLACEHOLDER — specify the retention period. Example: We retain enquiry emails for [X months/years] after the last interaction, after which they are permanently deleted."
+        ]
+      },
+      {
+        "heading": "6. Your Rights Under the DPDP Act 2023",
+        "body": [
+          "Under India's Digital Personal Data Protection Act 2023, you have the right to:",
+          "• Access personal data we hold about you",
+          "• Correct inaccurate personal data",
+          "• Request erasure of your personal data",
+          "• Withdraw consent at any time",
+          "• Nominate another person to exercise these rights on your behalf",
+          "To exercise any of these rights, contact us at the email address listed in Section 1."
+        ]
+      },
+      {
+        "heading": "7. Cookies and Analytics",
+        "body": [
+          "PLACEHOLDER — describe your cookie usage. Example: This website uses Google Analytics 4 and/or Meta Pixel (managed via Google Tag Manager) to understand how visitors use the site. These tools may set cookies. Update this section once your consent management is live."
+        ]
+      },
+      {
+        "heading": "8. Security",
+        "body": [
+          "PLACEHOLDER — describe the measures taken to protect data in transit and at rest. Example: All data is transmitted over HTTPS. Enquiries are delivered by encrypted SMTP. We do not store enquiry data in a database."
+        ]
+      },
+      {
+        "heading": "9. Changes to This Policy",
+        "body": [
+          "We may update this policy from time to time. When we do, we will update the Last Updated date at the top of this page. Continued use of the site after changes constitutes acceptance of the updated policy."
+        ]
+      },
+      {
+        "heading": "10. Contact",
+        "body": [
+          "PLACEHOLDER — insert the privacy contact email and/or postal address for data-related requests."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "approved": false,
+    "lastUpdated": "PLACEHOLDER — awaiting approved legal copy",
+    "sections": [
+      {
+        "heading": "1. Acceptance of Terms",
+        "body": [
+          "By accessing and using this website, you accept and agree to be bound by these Terms and Conditions. If you do not agree, please do not use this website."
+        ]
+      },
+      {
+        "heading": "2. Website Purpose",
+        "body": [
+          "This website is operated by Garvit Buildtech for informational purposes relating to real estate projects in Haridwar, Uttarakhand, India. It is not an offer to sell or a solicitation of an offer to buy any property.",
+          "PLACEHOLDER — add any RERA registration numbers and required statutory disclosures here once the projects are RERA-registered."
+        ]
+      },
+      {
+        "heading": "3. Accuracy of Information",
+        "body": [
+          "While we make every effort to ensure that the information on this website is accurate and up to date, it is provided for general informational purposes only.",
+          "Project specifications, prices, availability, and timelines are subject to change without notice. PLACEHOLDER — add any jurisdiction-specific disclaimers required by RERA or other applicable law."
+        ]
+      },
+      {
+        "heading": "4. No Offer or Contract",
+        "body": [
+          "Nothing on this website constitutes a legally binding offer, agreement, or contract for the sale of any property. Any transaction will be governed solely by the registered sale agreement and applicable law."
+        ]
+      },
+      {
+        "heading": "5. Intellectual Property",
+        "body": [
+          "All content on this website — including text, images, architectural renderings, branding, and design — is the property of Garvit Buildtech or its licensors and is protected by applicable copyright and intellectual property laws.",
+          "You may not reproduce, distribute, or use any content without the express written permission of Garvit Buildtech."
+        ]
+      },
+      {
+        "heading": "6. Third-Party Links and Maps",
+        "body": [
+          "This website may contain links to third-party websites (including Google Maps). We are not responsible for the content, accuracy, or privacy practices of those sites."
+        ]
+      },
+      {
+        "heading": "7. Limitation of Liability",
+        "body": [
+          "PLACEHOLDER — insert the limitation of liability clause, reviewed by legal counsel. Example: To the maximum extent permitted by applicable law, Garvit Buildtech shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your use of this website."
+        ]
+      },
+      {
+        "heading": "8. Governing Law",
+        "body": [
+          "PLACEHOLDER — Insert the governing law clause. Example: These terms shall be governed by and construed in accordance with the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts at [City], Uttarakhand."
+        ]
+      },
+      {
+        "heading": "9. Changes to Terms",
+        "body": [
+          "We reserve the right to modify these terms at any time. Changes will be effective upon posting to this page with an updated date. Continued use of the website constitutes acceptance of the revised terms."
+        ]
+      },
+      {
+        "heading": "10. Contact",
+        "body": [
+          "PLACEHOLDER — insert a contact email address or physical address for legal queries."
+        ]
+      }
+    ]
+  }
+}

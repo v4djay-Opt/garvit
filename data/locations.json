@@ -1,0 +1,22 @@
+[
+  {
+    "_notice": "PLACEHOLDER — replace with verified content before publishing. All landmark distances must be verified before setting verified:true.",
+    "id":         "haridwar-main",
+    "heading":    "PLACEHOLDER — Haridwar story heading.",
+    "subheading": "PLACEHOLDER — subheading.",
+    "body": [
+      "PLACEHOLDER — paragraph about Haridwar's connectivity, lifestyle, infrastructure and natural setting. All factual claims must be verified by Garvit Buildtech before publishing.",
+      "PLACEHOLDER — second paragraph."
+    ],
+    "image": {
+      "src":    "/images/placeholder-haridwar.jpg",
+      "alt":    "Haridwar, Uttarakhand",
+      "width":  1200,
+      "height": 800
+    },
+    "highlights": [
+      "PLACEHOLDER — connectivity highlight (verify before publishing)",
+      "PLACEHOLDER — infrastructure highlight (verify before publishing)"
+    ]
+  }
+]
