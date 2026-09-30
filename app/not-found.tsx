@@ -7,6 +7,7 @@ export const dynamic = "force-static";
 
 import Link from "next/link";
 import type { Metadata } from "next";
+import { InfinityLines } from "@/components/ui/InfinityLines";
 
 export const metadata: Metadata = {
   title: "Page Not Found",
@@ -25,8 +26,12 @@ export default function NotFound() {
         padding: "4rem 2rem",
         background: "var(--color-charcoal)",
         color: "var(--color-bone)",
+        position: "relative",
+        overflow: "hidden",
       }}
     >
+      <InfinityLines />
+      <div style={{ position: "relative", zIndex: 1 }}>
       <p
         style={{
           fontSize: "0.75rem",
@@ -73,6 +78,7 @@ export default function NotFound() {
       >
         Return Home
       </Link>
+      </div>
     </div>
   );
 }

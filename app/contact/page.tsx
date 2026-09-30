@@ -15,6 +15,7 @@ export const dynamic = "force-static";
 
 import { buildMetadata } from "@/lib/seo/metadata";
 import { getSite, getVisibleProjects } from "@/lib/content/repository";
+import { WebPageStructuredData } from "@/lib/seo/structured-data";
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { PageHero } from "@/components/sections/PageHero";
@@ -24,7 +25,7 @@ import { ProjectLocation } from "@/components/project/ProjectLocation";
 import { Suspense } from "react";
 import { ContactEnquiry } from "@/components/forms/ContactEnquiry";
 
-export async function generateMetadata() { return buildMetadata({ title: 'Contact', canonicalPath: '/contact' }); }
+export async function generateMetadata() { return buildMetadata({ title: "Contact Garvit Buildtech", description: "Get in touch with Garvit Buildtech in Haridwar — enquiries about Palm City, Vantara Farms and upcoming residential projects.", canonicalPath: '/contact' }); }
 
 export default async function ContactPage() {
   const [site, projects] = await Promise.all([getSite(), getVisibleProjects()]);
@@ -36,6 +37,7 @@ export default async function ContactPage() {
 
   return (
     <>
+      <WebPageStructuredData name="Contact Garvit Buildtech" description="Get in touch with Garvit Buildtech in Haridwar — enquiries about Palm City, Vantara Farms and upcoming residential projects." path="/contact" site={site} />
       <PageHero eyebrow="Contact" title="Let's start a conversation." description="Tell us what you have in mind. Our team can help with project details, enquiries and site visits." />
 
       {/* Contact info + form */}

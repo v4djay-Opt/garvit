@@ -139,7 +139,7 @@ export function Footer({ site }: FooterProps) {
               <Link href="/contact#enquiry" className="footer-contact-link">Send an enquiry ↗</Link>
               {valid(contact.phone) && (
                 <a
-                  href={`tel:${contact.phone}`}
+                  href={`tel:${contact.phone!.replace(/\s/g, "")}`}
                   style={{
                     fontFamily: "var(--font-body)",
                     fontSize: "0.9375rem",

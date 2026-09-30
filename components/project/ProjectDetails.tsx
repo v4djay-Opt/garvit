@@ -25,7 +25,7 @@ export function ProjectDetails({ project }: { project: Project }) {
         <h3 className="text-h3">{amenity.title}</h3>{amenity.description && <p>{amenity.description}</p>}
       </article>)}
     </div></Block>}
-    {!!project.media.gallery?.length && <Block title="A closer look" id="gallery">{project.media.gallery.some(image => image.caption === "Representative image") && <p className="detail-copy">Images are representative and illustrate the project’s intended lifestyle.</p>}<Gallery images={project.media.gallery} /></Block>}
+    {!!project.media.gallery?.length && <Block title="A closer look" id="gallery"><Gallery images={project.media.gallery} /></Block>}
   </>;
 }
 export function ProjectSpecifications({ project }: { project: Project }) {

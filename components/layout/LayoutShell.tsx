@@ -17,23 +17,30 @@ import { usePathname } from "next/navigation";
 import { Analytics } from "@/components/analytics/Analytics";
 import { MotionProvider } from "@/lib/motion/motion-provider";
 import { Header } from "./Header";
+import type { NavProject } from "./FullNav";
 import type { Site } from "@/lib/content/types";
 import type { ReactNode } from "react";
 
 interface LayoutShellProps {
   site: Site;
+  projects: NavProject[];
   children: ReactNode;
   footer: ReactNode;
   /** Pages without a hero image should pass true so the header always shows solid */
   solidHeader?: boolean;
 }
 
-export function LayoutShell({ site, children, footer, solidHeader }: LayoutShellProps) {
+export function LayoutShell({ site, projects, children, footer, solidHeader }: LayoutShellProps) {
   const pathname = usePathname();
   const lightPage = ["/kitchen-sink"].includes(pathname);
   return (
     <MotionProvider>
-      <Header nav={site.nav} brand={site.brand} alwaysSolid={solidHeader || lightPage} />
+      <Header
+        nav={site.nav}
+        brand={site.brand}
+        projects={projects}
+        alwaysSolid={solidHeader || lightPage}
+      />
       {children}
       {footer}
       <Analytics />

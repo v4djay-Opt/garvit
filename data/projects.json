@@ -18,32 +18,32 @@
     "media": {
       "heroImage": {
         "src": "/projects/palm-city-haridwar/listing.webp",
-        "alt": "Palm City entrance and landscaped driveway, from the project website.",
+        "alt": "Representative photograph of a contemporary residence.",
         "width": 1180,
         "height": 896,
-        "caption": "Image from project website"
+        "caption": "Representative photograph — not project imagery"
       },
       "gallery": [
         {
           "src": "/projects/palm-city-haridwar/gallery-1.webp",
-          "alt": "Palm City project gallery view of the development.",
+          "alt": "Representative photograph of a modern home exterior.",
           "width": 1400,
           "height": 933,
-          "caption": "Image from project website"
+          "caption": "Representative photograph — not project imagery"
         },
         {
           "src": "/projects/palm-city-haridwar/gallery-2.webp",
-          "alt": "Palm City project gallery view of the neighbourhood.",
+          "alt": "Representative photograph of a suburban residence.",
           "width": 1400,
           "height": 1050,
-          "caption": "Image from project website"
+          "caption": "Representative photograph — not project imagery"
         },
         {
           "src": "/projects/palm-city-haridwar/gallery-3.webp",
-          "alt": "Palm City project gallery view of the township.",
+          "alt": "Representative aerial photograph of a residential neighbourhood.",
           "width": 1185,
           "height": 896,
-          "caption": "Image from project website"
+          "caption": "Representative photograph — not project imagery"
         }
       ]
     },
@@ -56,10 +56,10 @@
       ],
       "image": {
         "src": "/projects/palm-city-haridwar/listing.webp",
-        "alt": "Palm City entrance and landscaped driveway, from the project website.",
+        "alt": "Representative photograph of a contemporary residence.",
         "width": 1180,
         "height": 896,
-        "caption": "Image from project website"
+        "caption": "Representative photograph — not project imagery"
       }
     },
     "highlights": [
@@ -163,8 +163,8 @@
       "whatsapp": false
     },
     "seo": {
-      "title": "Palm City Haridwar | Residential Plots",
-      "description": "Residential plots in Haridwar, with a choice of plot sizes in a planned township."
+      "title": "Palm City Haridwar | Garvit Buildtech",
+      "description": "Palm City by Garvit Buildtech — residential plots in Salempur Mahdood, Haridwar, with a choice of plot sizes in a planned township."
     }
   },
   {
@@ -177,39 +177,39 @@
     "order": 2,
     "location": {
       "label": "Near Haridwar",
-      "city": "Near Haridwar"
+      "city": "Haridwar"
     },
     "shortDescription": "Farm houses near Haridwar, designed around private living spaces and green surroundings.",
     "positioningStatement": "Farm houses near Haridwar, designed around private living spaces and green surroundings.",
     "media": {
       "heroImage": {
         "src": "/projects/vantara-farms/listing.webp",
-        "alt": "Representative timber-clad house shown on the Vantara Farms website.",
+        "alt": "Representative photograph of a contemporary house at dusk.",
         "width": 1400,
         "height": 933,
-        "caption": "Representative image"
+        "caption": "Representative photograph"
       },
       "gallery": [
         {
           "src": "/projects/vantara-farms/farmhouse-dusk.webp",
-          "alt": "Representative contemporary house illuminated at dusk.",
+          "alt": "Representative photograph of a contemporary house illuminated at dusk.",
           "width": 1400,
           "height": 933,
-          "caption": "Representative image"
+          "caption": "Representative photograph"
         },
         {
           "src": "/projects/vantara-farms/interior-open.webp",
-          "alt": "Representative open-plan living room with wooden floors and a staircase.",
+          "alt": "Representative photograph of an open-plan living space.",
           "width": 1400,
           "height": 933,
-          "caption": "Representative image"
+          "caption": "Representative photograph"
         },
         {
           "src": "/projects/vantara-farms/green-park.webp",
-          "alt": "Representative tree-lined park path.",
+          "alt": "Representative photograph of a tree-lined forest path.",
           "width": 1400,
           "height": 933,
-          "caption": "Representative image"
+          "caption": "Representative photograph"
         }
       ]
     },
@@ -222,10 +222,10 @@
       ],
       "image": {
         "src": "/projects/vantara-farms/farmhouse-dusk.webp",
-        "alt": "Representative contemporary house illuminated at dusk.",
+        "alt": "Representative photograph of a contemporary house illuminated at dusk.",
         "width": 1400,
         "height": 933,
-        "caption": "Representative image"
+        "caption": "Representative photograph"
       }
     },
     "highlights": [
@@ -326,8 +326,8 @@
       "whatsapp": false
     },
     "seo": {
-      "title": "Vantara Farms | Farm Houses near Haridwar",
-      "description": "Farm houses near Haridwar, designed around private living spaces and green surroundings."
+      "title": "Vantara Farms Haridwar | Garvit Buildtech",
+      "description": "Vantara Farms by Garvit Buildtech — farm houses near Haridwar, designed around private living spaces and green surroundings."
     }
   },
   {
@@ -349,10 +349,10 @@
     "media": {
       "heroImage": {
         "src": "/images/concepts/plots-v1.webp",
-        "alt": "AI-generated illustration of landscaped plots; not a photograph of Palm Street Phase 02.",
+        "alt": "Representative photograph of open farmland; not a photograph of Palm Street Phase 02.",
         "width": 960,
         "height": 1200,
-        "caption": "AI-generated concept — not project photography"
+        "caption": "Representative photograph — not project imagery"
       }
     },
     "story": {
@@ -495,7 +495,7 @@
       "whatsapp": false
     },
     "seo": {
-      "title": "Palm Street Phase 02 Haridwar | Residential Plots in IP-2 SIDCUL",
+      "title": "Palm Street Phase 02 Haridwar | Garvit Buildtech",
       "description": "Explore Palm Street Phase 02 at IP-2 SIDCUL, near Denso Chowk, Haridwar. Residential plots from 880 to 1,350 sq ft, project details and enquiries."
     }
   }

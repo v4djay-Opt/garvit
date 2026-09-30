@@ -20,6 +20,8 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { SplitHeading } from "@/components/ui/SplitHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { ParallaxMedia } from "@/components/media/ParallaxMedia";
+import { InfinityLines } from "@/components/ui/InfinityLines";
+import Link from "next/link";
 import type { Project } from "@/lib/content/types";
 
 const TYPE_LABEL: Record<string, string> = {
@@ -41,6 +43,12 @@ interface ProjectHeroProps {
 }
 
 export function ProjectHero({ project }: ProjectHeroProps) {
+  // H1 carries the full project+location entity: "Vantara Farms" →
+  // "Vantara Farms Haridwar". Names already containing the city are untouched.
+  const h1 = /haridwar/i.test(project.name)
+    ? project.name
+    : `${project.name} ${project.location.city}`;
+
   return (
     <section
       aria-label={`${project.name} hero`}
@@ -60,7 +68,7 @@ export function ProjectHero({ project }: ProjectHeroProps) {
         <HeroMedia image={project.media.heroImage} video={project.media.heroVideo} />
       </ParallaxMedia>
 
-      {project.media.heroImage.caption && <span className="image-caption image-caption--hero" style={{ zIndex: 3 }}>{project.media.heroImage.caption}</span>}
+
 
       {/* Bottom gradient */}
       <div
@@ -91,6 +99,11 @@ export function ProjectHero({ project }: ProjectHeroProps) {
         }}
       />
 
+      {/* Drifting hairline field — above image+gradients, below content */}
+      <div aria-hidden style={{ position: "absolute", inset: 0, zIndex: 1 }}>
+        <InfinityLines />
+      </div>
+
       {/* Content */}
       <div
         style={{
@@ -103,6 +116,31 @@ export function ProjectHero({ project }: ProjectHeroProps) {
           width: "100%",
         }}
       >
+        {/* Visible breadcrumb — mirrors the BreadcrumbList JSON-LD */}
+        <nav aria-label="Breadcrumb" style={{ marginBottom: "2rem" }}>
+          <ol
+            style={{
+              listStyle: "none",
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              gap: "0.625rem",
+              margin: 0,
+              padding: 0,
+              fontFamily: "var(--font-body)",
+              fontSize: "var(--text-eyebrow)",
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+            }}
+          >
+            <li><Link href="/" style={{ color: "var(--color-bone-muted)", textDecoration: "none" }}>Home</Link></li>
+            <li aria-hidden style={{ color: "var(--color-bone-muted)" }}>/</li>
+            <li><Link href="/projects" style={{ color: "var(--color-bone-muted)", textDecoration: "none" }}>Projects</Link></li>
+            <li aria-hidden style={{ color: "var(--color-bone-muted)" }}>/</li>
+            <li aria-current="page" style={{ color: "var(--color-gold)" }}>{project.name}</li>
+          </ol>
+        </nav>
+
         <Reveal delay={0.1}>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
             <Eyebrow
@@ -146,7 +184,7 @@ export function ProjectHero({ project }: ProjectHeroProps) {
             marginBottom: "1.25rem",
           }}
         >
-          {project.name}
+          {h1}
         </SplitHeading>
 
         {project.positioningStatement && (

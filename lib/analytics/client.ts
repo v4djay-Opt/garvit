@@ -21,7 +21,7 @@ export function saveConsent(value: Consent) {
 }
 let consentInMemory = false;
 export function setTrackingAllowed(value: boolean) { consentInMemory = value; }
-export function track(event: "page_view" | "form_start" | "lead_submit" | "brochure_download" | "whatsapp_click" | "phone_click" | "project_view" | "map_open", data: { form_type?: string; project_slug?: string; page_path?: string } = {}) {
+export function track(event: "page_view" | "form_start" | "lead_submit" | "brochure_download" | "whatsapp_click" | "phone_click" | "project_view" | "map_open" | "map_view", data: { form_type?: string; project_slug?: string; page_path?: string } = {}) {
   if (!consentInMemory) return;
   const win = window as AnalyticsWindow;
   win.dataLayer ??= [];

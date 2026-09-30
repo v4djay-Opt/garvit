@@ -3,6 +3,7 @@ import { Container } from "@/components/layout/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { SplitHeading } from "@/components/ui/SplitHeading";
 import { Reveal } from "@/components/ui/Reveal";
+import { InfinityLines } from "@/components/ui/InfinityLines";
 
 /** Shared editorial hero for static pages and the property archive. */
 export function PageHero({ eyebrow, title, description, links }: {
@@ -11,8 +12,9 @@ export function PageHero({ eyebrow, title, description, links }: {
   description?: string;
   links?: { label: string; href: string }[];
 }) {
-  return <Section variant="dark" aria-label={`${eyebrow} hero`} style={{ paddingTop: "clamp(8rem, 14vw, 12rem)" }}>
-    <Container>
+  return <Section variant="dark" aria-label={`${eyebrow} hero`} style={{ paddingTop: "clamp(8rem, 14vw, 12rem)", position: "relative", overflow: "hidden" }}>
+    <InfinityLines />
+    <Container style={{ position: "relative", zIndex: 1 }}>
       <Reveal><Eyebrow theme="dark" style={{ marginBottom: "1.5rem" }}>{eyebrow}</Eyebrow></Reveal>
       <SplitHeading as="h1" mountOnLoad delay={0.05} stagger={0.1} style={{
         fontFamily: "var(--font-display)", fontSize: "clamp(2.5rem, 6vw, 6rem)",

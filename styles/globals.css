@@ -358,11 +358,110 @@ a:hover .btn-underline {
 .dialog-heading { display: flex; align-items: start; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
 .dialog-heading h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
 .navigation-dialog { width: 100%; max-width: none; height: 100svh; max-height: none; border: none; background: var(--color-charcoal); color: var(--color-bone); }
-.navigation-dialog .dialog-surface { min-height: 100%; display: flex; flex-direction: column; }
-.mobile-links { list-style: none; display: grid; gap: 1.5rem; margin-top: 2rem; }
-.mobile-links a { color: inherit; font-family: var(--font-display); font-size: clamp(2rem, 6vw, 4rem); text-decoration: none; }
-a[aria-current="page"] { text-decoration: underline; text-underline-offset: .35em; }
-.eyebrow-footer { margin-top: auto; padding-top: 3rem; }
+.navigation-dialog .dialog-surface { min-height: 100%; display: flex; flex-direction: column; padding-top: clamp(6.5rem, 14vh, 9rem); }
+
+/* Top bar inside the nav — mirrors the site header geometry so the
+   open ("Menu") and close buttons occupy the same screen position. */
+.navigation-dialog .dialog-heading {
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 80px; margin: 0;
+  padding-inline: clamp(1.25rem, 4vw, 4rem);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.navigation-dialog .dialog-heading h2 { margin: 0; line-height: 0; }
+.nav-logo { height: clamp(34px, 4vw, 46px); width: auto; display: block; }
+.navigation-dialog .plain-button {
+  font-family: var(--font-body); font-size: var(--text-eyebrow);
+  font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--color-bone); padding: 0.5rem 0;
+  min-width: auto; min-height: auto;
+  display: inline-flex; align-items: center; gap: 0.75rem;
+}
+.navigation-dialog .plain-button:hover { opacity: 0.7; }
+
+/* ── Full-screen navigation ── */
+.nav-anim-root { display: flex; flex-direction: column; flex: 1; min-height: 100%; }
+.nav-body { display: grid; grid-template-columns: 1fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: start; flex: 1; position: relative; z-index: 1; }
+@media (min-width: 900px) {
+  .nav-body { grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr); }
+}
+
+.nav-links { list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(0.5rem, 2vh, 1.25rem); }
+.nav-link-mask { overflow: hidden; display: block; }
+.nav-link { color: inherit; font-family: var(--font-display); font-size: clamp(2.25rem, 7vw, 4.5rem); font-weight: 300; letter-spacing: -0.02em; line-height: 1.15; text-decoration: none; display: inline-flex; align-items: baseline; gap: 1.25rem; transition: color 250ms ease; }
+.nav-link:hover { color: var(--color-gold); }
+.nav-link:focus-visible { outline: 1px solid var(--color-gold); outline-offset: 6px; }
+.nav-link-index { font-family: var(--font-body); font-size: 0.75rem; font-weight: 400; letter-spacing: 0.14em; color: var(--color-bone-muted); transform: translateY(-0.5em); }
+.nav-link-current { width: 2.5rem; height: 1px; background: var(--color-gold); align-self: center; }
+.nav-link[aria-current="page"] { text-decoration: none; }
+
+/* Projects rail */
+.nav-projects-heading { font-family: var(--font-body); font-size: var(--text-eyebrow); font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-gold); margin: 0 0 1rem; }
+.nav-project-list { list-style: none; margin: 0; padding: 0; }
+.nav-project-link { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-block: 0.875rem; border-bottom: 1px solid color-mix(in srgb, var(--color-bone-muted) 18%, transparent); text-decoration: none; color: var(--color-bone); transition: opacity 200ms ease; }
+.nav-project-link:hover { opacity: 0.7; }
+.nav-project-link:focus-visible { outline: 1px solid var(--color-gold); outline-offset: 4px; }
+.nav-project-name { font-family: var(--font-display); font-size: clamp(1.125rem, 2vw, 1.5rem); font-weight: 400; letter-spacing: -0.01em; }
+.nav-project-meta { font-family: var(--font-body); font-size: 0.6875rem; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-bone-muted); white-space: nowrap; }
+.nav-project-all .nav-project-name { font-family: var(--font-body); font-size: var(--text-eyebrow); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-bone-muted); }
+
+.navigation-dialog { overflow: hidden; }
+.navigation-dialog .dialog-surface { position: relative; }
+
+/* Brand mark — animated text watermark bleeding off the bottom edge */
+.nav-brand-row { position: absolute; right: clamp(1.25rem, 4vw, 4rem); bottom: 0; pointer-events: none; z-index: 0; }
+.nav-brand-mark { display: block; text-align: right; color: var(--color-bone); transform: translateY(12%); }
+.nav-brand-mark-main { display: block; font-family: var(--font-body); font-size: clamp(5rem, 14vw, 12rem); font-weight: 800; letter-spacing: -0.015em; line-height: 0.9; text-transform: uppercase; opacity: 0.18; }
+.nav-brand-mark-sub { display: block; font-family: var(--font-body); font-size: clamp(0.875rem, 2vw, 1.5rem); font-weight: 500; letter-spacing: 0.55em; margin-top: 0.5em; opacity: 0.3; }
+
+/* Lens-Drift — letters slip in and out of focus, one after another.
+   Parent opacity (.18/.3) multiplies with the animated letter opacity so
+   the ghost-watermark dimness is preserved at the peaks. */
+.fx-focus b {
+  font-weight: inherit;
+  display: inline-block;
+  animation: fx-focus 2.6s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.18s);
+}
+@keyframes fx-focus {
+  0%, 100% { filter: blur(0);   opacity: 1; }
+  50%      { filter: blur(7px); opacity: .35; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fx-focus b { animation: none; }
+}
+
+.eyebrow-footer { margin-top: auto; padding-top: 3rem; position: relative; z-index: 1; }
+
+/* ── Infinity lines — drifting hairline field for page heroes ──
+   Two repeating-gradient layers translated by exactly one repeat period
+   per loop → seamless infinite drift. Pure CSS, zero JS. */
+.infinity-lines { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.infinity-lines::before,
+.infinity-lines::after { content: ""; position: absolute; will-change: transform; }
+.infinity-lines::before {
+  /* vertical hairlines drifting right — 120px period */
+  top: 0; bottom: 0; left: -120px; right: -120px;
+  background-image: repeating-linear-gradient(to right,
+    color-mix(in srgb, var(--color-bone) 5%, transparent) 0px,
+    color-mix(in srgb, var(--color-bone) 5%, transparent) 1px,
+    transparent 1px, transparent 120px);
+  animation: lines-drift-x 22s linear infinite;
+}
+.infinity-lines::after {
+  /* horizontal hairlines drifting down — 180px period, slower + fainter */
+  left: 0; right: 0; top: -180px; bottom: -180px;
+  background-image: repeating-linear-gradient(to bottom,
+    color-mix(in srgb, var(--color-bone) 3.5%, transparent) 0px,
+    color-mix(in srgb, var(--color-bone) 3.5%, transparent) 1px,
+    transparent 1px, transparent 180px);
+  animation: lines-drift-y 38s linear infinite;
+}
+@keyframes lines-drift-x { to { transform: translateX(120px); } }
+@keyframes lines-drift-y { to { transform: translateY(180px); } }
+@media (prefers-reduced-motion: reduce) {
+  .infinity-lines::before, .infinity-lines::after { animation: none; }
+}
 .hero-media { position: absolute; inset: 0; background: var(--color-charcoal); }
 .hero-backdrop-clip { position: absolute; inset: 0; z-index: 0; clip-path: inset(0 round 0 0 var(--radius-media) var(--radius-media)); }
 .hero-fixed-backdrop { position: fixed; inset: 0; }

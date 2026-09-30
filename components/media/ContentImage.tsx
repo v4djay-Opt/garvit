@@ -35,7 +35,7 @@ export function ContentImage({ image, sizes = "(max-width: 768px) 100vw, 50vw", 
   }
 
   return (
-    <><Image
+    <Image
       src={image.src}
       alt={image.alt}
       fill
@@ -46,7 +46,5 @@ export function ContentImage({ image, sizes = "(max-width: 768px) 100vw, 50vw", 
       style={{ objectFit: "cover", ...style }}
       onError={() => setFailed(true)}
     />
-      {image.caption && <span className="image-caption">{image.caption}</span>}
-    </>
   );
 }

@@ -14,13 +14,14 @@ export const dynamic = "force-static";
 
 import { buildMetadata } from "@/lib/seo/metadata";
 import { Suspense } from "react";
-import { getVisibleProjects } from "@/lib/content/repository";
+import { getVisibleProjects, getSite } from "@/lib/content/repository";
+import { WebPageStructuredData } from "@/lib/seo/structured-data";
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { PageHero } from "@/components/sections/PageHero";
 import { ProjectListingClient } from "@/components/project/ProjectListingClient";
 
-export async function generateMetadata() { return buildMetadata({ title: 'Projects', canonicalPath: '/projects' }); }
+export async function generateMetadata() { return buildMetadata({ title: "Garvit Buildtech Projects in Haridwar", description: "Explore Garvit Buildtech's residential projects in Haridwar — Palm City, Vantara Farms and Palm Street Phase 02.", canonicalPath: '/projects' }); }
 
 /** Loading skeleton — shown until ProjectListingClient hydrates */
 function ListingSkeleton() {
@@ -60,10 +61,11 @@ function ListingSkeleton() {
 }
 
 export default async function ProjectsPage() {
-  const projects = await getVisibleProjects();
+  const [projects, site] = await Promise.all([getVisibleProjects(), getSite()]);
 
   return (
     <>
+      <WebPageStructuredData name="Garvit Buildtech Projects in Haridwar" description="Explore Garvit Buildtech's residential projects in Haridwar — Palm City, Vantara Farms and Palm Street Phase 02." path="/projects" site={site} />
       <PageHero eyebrow="Our Work" title="Every project, a considered decision." description="Explore residential plots and farm houses, each with its own sense of place." />
 
       {/* Filter + grid (client) */}

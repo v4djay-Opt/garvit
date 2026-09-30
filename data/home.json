@@ -1,7 +1,7 @@
 {
   "_notice": "PLACEHOLDER \u2014 replace all values before production launch",
   "hero": {
-    "eyebrow": "Haridwar, Uttarakhand",
+    "eyebrow": "Garvit Buildtech · Haridwar, Uttarakhand",
     "headline": "Where land meets legacy.",
     "subline": "Crafting premium residential experiences in the spiritual capital of Uttarakhand.",
     "primaryCta": {
@@ -14,7 +14,7 @@
     },
     "posterImage": {
       "src": "/images/hero/home-hero.jpg",
-      "alt": "Aerial view of a river winding between green hills and a riverside town.",
+      "alt": "Aerial view of mist rolling over forested mountain ridges.",
       "width": 1920,
       "height": 1080
     },
@@ -38,10 +38,10 @@
       "tagline": "Prime residential plots in Haridwar's most coveted locations.",
       "image": {
         "src": "/images/concepts/plots-v1.webp",
-        "alt": "Illustrative concept of green land parcels with stone boundaries and a tree-lined access lane.",
+        "alt": "Representative photograph of open farmland at golden hour.",
         "width": 960,
         "height": 1200,
-        "caption": "AI-generated concept"
+        "caption": "Representative photograph"
       }
     },
     {
@@ -50,10 +50,10 @@
       "tagline": "Private farm houses with space to unwind, surrounded by nature.",
       "image": {
         "src": "/projects/vantara-farms/listing.webp",
-        "alt": "Representative timber-clad house shown on the Vantara Farms website.",
+        "alt": "Representative photograph of a contemporary house at dusk.",
         "width": 1400,
         "height": 933,
-        "caption": "Representative image"
+        "caption": "Representative photograph"
       }
     }
   ],
@@ -66,10 +66,10 @@
     ],
     "image": {
       "src": "/images/concepts/riverscape-v1.webp",
-      "alt": "Imagined riverside landscape with stone steps, a pavilion and misty wooded hills.",
+      "alt": "Representative photograph of a glacial lake in a mountain valley.",
       "width": 1536,
       "height": 1024,
-      "caption": "AI-generated concept"
+      "caption": "Representative photograph"
     }
   },
   "philosophy": {

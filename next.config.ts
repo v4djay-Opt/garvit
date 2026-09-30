@@ -108,6 +108,17 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  // Collapse legacy duplicate-URL variants onto the canonical homepage.
+  // (www→apex and http→https happen at the Nginx layer — see deploy/nginx.)
+  async redirects() {
+    return [
+      { source: "/index.html", destination: "/", permanent: true },
+      { source: "/index.php",  destination: "/", permanent: true },
+      { source: "/home",       destination: "/", permanent: true },
+      { source: "/index",      destination: "/", permanent: true },
+    ];
+  },
+
   // Strict mode catches hydration issues early.
   reactStrictMode: true,
 

@@ -7,9 +7,13 @@ export async function buildMetadata(page: { title?: string; description?: string
   const title = page.title ? (page.title.includes(site.brand.name) ? page.title : site.seo.titleTemplate.replace("%s", page.title)) : site.seo.defaultTitle;
   const description = page.description || site.seo.defaultDescription;
   const url = `${base}${page.canonicalPath || ""}`;
-  const image = page.ogImage || "/opengraph-image";
+  const image = page.ogImage || site.seo.ogImage || "/opengraph-image";
   const noIndex = page.noIndex || process.env.SITE_RELEASE !== "true";
   return { title: { absolute: title }, description, metadataBase: new URL(base), alternates: { canonical: url },
     openGraph: { title, description, url, siteName: site.brand.name, locale: "en_IN", type: "website", images: [{ url: image, width: 1200, height: 630 }] },
-    twitter: { card: "summary_large_image", title, description, images: [image] }, robots: { index: !noIndex, follow: !noIndex } };
+    twitter: { card: "summary_large_image", title, description, images: [image] }, robots: { index: !noIndex, follow: !noIndex },
+    verification: {
+      ...(process.env.GOOGLE_SITE_VERIFICATION && { google: process.env.GOOGLE_SITE_VERIFICATION }),
+      ...(process.env.BING_SITE_VERIFICATION && { other: { "msvalidate.01": process.env.BING_SITE_VERIFICATION } }),
+    } };
 }

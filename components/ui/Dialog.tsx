@@ -3,8 +3,8 @@
 import { useEffect, useRef, type ReactNode, type KeyboardEvent } from "react";
 
 /** Native modal keeps background inert, traps Tab and restores trigger focus. */
-export function Dialog({ open, onClose, title, children, className = "", id, onKeyDown }: {
-  open: boolean; onClose: () => void; title: string; children: ReactNode; className?: string; id?: string; onKeyDown?: (event: KeyboardEvent<HTMLDialogElement>) => void;
+export function Dialog({ open, onClose, title, children, className = "", id, onKeyDown, label }: {
+  open: boolean; onClose: () => void; title: ReactNode; children: ReactNode; className?: string; id?: string; onKeyDown?: (event: KeyboardEvent<HTMLDialogElement>) => void; label?: string;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
   const closeRef = useRef(onClose);
@@ -22,7 +22,9 @@ export function Dialog({ open, onClose, title, children, className = "", id, onK
       if (trigger instanceof HTMLElement && trigger.isConnected) trigger.focus();
     };
   }, [open]);
-  return <dialog ref={ref} id={id} aria-label={title} className={`site-dialog ${className}`}
+  return <dialog ref={ref} id={id}
+    {...(label ? { "aria-label": label } : { "aria-labelledby": `${id ?? "dialog"}-title` })}
+    className={`site-dialog ${className}`}
     onKeyDown={(event) => {
       onKeyDown?.(event);
       if (event.key !== "Tab") return;
@@ -36,7 +38,7 @@ export function Dialog({ open, onClose, title, children, className = "", id, onK
     onCancel={(event) => { event.preventDefault(); closeRef.current(); }}
     onClick={(event) => { if (event.target === event.currentTarget) closeRef.current(); }}>
     {open && <div className="dialog-surface">
-      <div className="dialog-heading"><h2 className="text-h3">{title}</h2>
+      <div className="dialog-heading"><h2 className="text-h3" id={`${id ?? "dialog"}-title`}>{title}</h2>
         <button type="button" className="plain-button" onClick={onClose} aria-label="Close dialog">Close <span aria-hidden>×</span></button>
       </div>
       {children}

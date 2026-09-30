@@ -18,7 +18,8 @@ export const dynamic = "force-static";
 import { PageHero } from "@/components/sections/PageHero";
 import { ContentImage } from "@/components/media/ContentImage";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { getAbout } from "@/lib/content/repository";
+import { getAbout, getSite } from "@/lib/content/repository";
+import { WebPageStructuredData } from "@/lib/seo/structured-data";
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -34,10 +35,16 @@ export async function generateMetadata() {
 }
 
 export default async function AboutPage() {
-  const about = await getAbout();
+  const [about, site] = await Promise.all([getAbout(), getSite()]);
 
   return (
     <>
+      <WebPageStructuredData
+        name={about.meta?.title || "About Garvit Buildtech"}
+        description={about.meta?.description}
+        path="/about"
+        site={site}
+      />
       <PageHero eyebrow={about.hero.eyebrow || "About Us"} title={about.hero.statement}
         description="Residential plots and farm houses, shaped around the way you want to live."
         links={[{ label: "Our story", href: "#story" }, { label: "Mission & vision", href: "#purpose" }, { label: "Our directors", href: "#leadership" }]} />
@@ -104,7 +111,7 @@ export default async function AboutPage() {
               {about.story.image && (
                 <div className="media-frame" style={{ position: "relative", overflow: "hidden" }}>
                   <div style={{ paddingBottom: "100%", position: "relative" }}>
-                    <ParallaxMedia speed={about.story.image.caption ? 0 : 5} style={{ position: "absolute", inset: 0 }}>
+                    <ParallaxMedia speed={5} style={{ position: "absolute", inset: 0 }}>
                       <ContentImage image={about.story.image} />
                     </ParallaxMedia>
                   </div>

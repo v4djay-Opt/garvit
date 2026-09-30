@@ -186,7 +186,7 @@ export function HeroSection({ hero }: HeroSectionProps) {
           <line x1="0.5" y1="0" x2="0.5" y2="40" stroke="var(--color-gold)" strokeWidth="1" />
         </svg>
       </div>
-      {hero.posterImage.caption && <span className="image-caption image-caption--hero">{hero.posterImage.caption}</span>}
+
     </section>
   );
 }

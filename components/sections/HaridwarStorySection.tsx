@@ -47,7 +47,7 @@ export function HaridwarStorySection({ story }: HaridwarStorySectionProps) {
           className="media-frame haridwar-image-col"
           style={{ position: "relative", overflow: "hidden", minHeight: "380px" }}
         >
-          <ParallaxMedia speed={story.image.caption ? 0 : 6} style={{ position: "absolute", inset: 0 }}>
+          <ParallaxMedia speed={6} style={{ position: "absolute", inset: 0 }}>
             <ContentImage image={story.image} />
           </ParallaxMedia>
         </div>

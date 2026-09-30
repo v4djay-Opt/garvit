@@ -18,9 +18,11 @@ export const dynamic = "force-static";
 import { buildMetadata } from "@/lib/seo/metadata";
 import {
   getHome,
+  getSite,
   getVisibleProjects,
   getTestimonials,
 } from "@/lib/content/repository";
+import { WebPageStructuredData } from "@/lib/seo/structured-data";
 
 import { HeroSection }            from "@/components/sections/HeroSection";
 import { ManifestoSection }       from "@/components/sections/ManifestoSection";
@@ -34,16 +36,24 @@ import { ClosingCtaSection }      from "@/components/sections/ClosingCtaSection"
 export async function generateMetadata() { return buildMetadata({ title: '', canonicalPath: '/' }); }
 
 export default async function HomePage() {
-  const [home, visibleProjects, testimonials] = await Promise.all([
+  const [home, visibleProjects, testimonials, site] = await Promise.all([
     getHome(),
     getVisibleProjects(),
     getTestimonials(),
+    getSite(),
   ]);
   const featuredProjects = visibleProjects.filter((p) => p.featured);
   const categoryTypes = new Set(visibleProjects.map((p) => p.type));
 
   return (
     <>
+      <WebPageStructuredData
+        name="Garvit Buildtech | Real Estate Projects in Haridwar"
+        description={site.seo.defaultDescription}
+        path="/"
+        site={site}
+      />
+
       {/* 1. Cinematic hero — full viewport */}
       <HeroSection hero={home.hero} />
 

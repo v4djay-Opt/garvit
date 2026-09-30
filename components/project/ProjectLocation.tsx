@@ -3,22 +3,16 @@
 /**
  * components/project/ProjectLocation.tsx
  *
- * Location section with Google Maps facade.
+ * Location section with an embedded Google Map.
  *
- * Pattern (plan §11 / Technical PRD §15):
- *   1. Render a charcoal placeholder with location text + "Load Map" button
- *   2. On click: replace with Google Maps iframe using mapEmbedQuery
- *   3. Google Maps JS/network is NOT loaded until the user explicitly clicks
- *
- * This defers the Maps SDK until needed — zero iframe cost on first paint,
- * no cookie/tracking implications until the user requests the map.
+ * The iframe renders directly (no click-to-load facade) but keeps
+ * loading="lazy" so the browser defers it until it's near the viewport.
  *
  * Renders only if project.locationDetail is present.
  * Landmarks only render if landmark.verified === true (PRD §15 / §18).
  */
 
 import { track } from "@/lib/analytics/client";
-import { useState } from "react";
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -31,9 +25,6 @@ interface ProjectLocationProps {
 }
 
 export function ProjectLocation({ locationDetail, projectName }: ProjectLocationProps) {
-  const [mapLoaded, setMapLoaded] = useState(false);
-
-  function openMap() { setMapLoaded(true); track("map_open"); }
   const verifiedLandmarks = locationDetail.landmarks?.filter((l) => l.verified) ?? [];
   const connectivity = locationDetail.connectivity ?? [];
 
@@ -65,9 +56,9 @@ export function ProjectLocation({ locationDetail, projectName }: ProjectLocation
           }}
           className="location-grid"
         >
-          {/* Map facade */}
+          {/* Embedded map */}
           <div>
-            {mapLoaded && locationDetail.mapEmbedQuery ? (
+            {locationDetail.mapEmbedQuery ? (
               <iframe
                 title={`Map for ${projectName}`}
                 src={`https://www.google.com/maps?q=${encodeURIComponent(locationDetail.mapEmbedQuery)}&output=embed`}
@@ -79,86 +70,29 @@ export function ProjectLocation({ locationDetail, projectName }: ProjectLocation
                 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                onLoad={() => track("map_view")}
               />
             ) : (
-              /* Placeholder — loads map on click */
               <div
                 style={{
                   background: "var(--color-charcoal)",
                   height: "420px",
                   display: "flex",
-                  flexDirection: "column",
                   alignItems: "center",
                   justifyContent: "center",
-                  gap: "1.25rem",
-                  cursor: locationDetail.mapEmbedQuery ? "pointer" : "default",
-                  position: "relative",
-                  overflow: "hidden",
                 }}
-
               >
-                {/* Subtle grid overlay */}
-                <svg
-                  aria-hidden
-                  style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity: 0.06, pointerEvents: "none" }}
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  style={{
+                    fontFamily: "var(--font-body)",
+                    fontSize: "var(--text-eyebrow)",
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    color: "var(--color-bone-muted)",
+                  }}
                 >
-                  <defs>
-                    <pattern id="map-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" />
-                    </pattern>
-                  </defs>
-                  <rect width="100%" height="100%" fill="url(#map-grid)" />
-                </svg>
-
-                <svg
-                  width="32"
-                  height="40"
-                  viewBox="0 0 32 40"
-                  fill="none"
-                  aria-hidden
-                  style={{ opacity: 0.5 }}
-                >
-                  <path
-                    d="M16 0C7.163 0 0 7.163 0 16c0 10.938 14.25 23.25 15.063 23.906a1.25 1.25 0 001.874 0C17.75 39.25 32 26.937 32 16 32 7.163 24.837 0 16 0zm0 22.5a6.5 6.5 0 110-13 6.5 6.5 0 010 13z"
-                    fill="var(--color-bone-muted)"
-                  />
-                </svg>
-
-                {locationDetail.mapEmbedQuery ? (
-                  <button
-                    style={{
-                      fontFamily: "var(--font-body)",
-                      fontSize: "var(--text-eyebrow)",
-                      fontWeight: 500,
-                      letterSpacing: "0.1em",
-                      textTransform: "uppercase",
-                      color: "var(--color-bone)",
-                      background: "none",
-                      border: "1px solid color-mix(in srgb, var(--color-bone-muted) 40%, transparent)",
-                      padding: "0.75rem 1.5rem",
-                      cursor: "pointer",
-                    }}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      openMap();
-                    }}
-                  >
-                    Load Map
-                  </button>
-                ) : (
-                  <p
-                    style={{
-                      fontFamily: "var(--font-body)",
-                      fontSize: "var(--text-eyebrow)",
-                      letterSpacing: "0.1em",
-                      textTransform: "uppercase",
-                      color: "var(--color-bone-muted)",
-                    }}
-                  >
-                    Map coming soon
-                  </p>
-                )}
+                  Map coming soon
+                </p>
               </div>
             )}
             {locationDetail.mapUrl && <a href={locationDetail.mapUrl} target="_blank" rel="noopener noreferrer" className="text-link" style={{ display: "inline-block", marginTop: "1.25rem" }}>Get directions ↗</a>}

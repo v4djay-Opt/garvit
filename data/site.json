@@ -34,8 +34,8 @@
   ],
   "contact": {
     "address": "Palm City, IP-2 SIDCUL, near Denso Chowk, Haridwar, Uttarakhand",
-    "phone": "PLACEHOLDER",
-    "email": "PLACEHOLDER@yourdomain.com",
+    "phone": "+91 82877 42699",
+    "email": "info@garvitbuildtech.com",
     "whatsappNumber": "PLACEHOLDER",
     "workingHours": "PLACEHOLDER",
     "mapEmbedQuery": "29.9522222,78.0458333",
@@ -47,11 +47,11 @@
     "youtube": ""
   },
   "seo": {
-    "defaultTitle": "Garvit Buildtech — Premium Properties in Haridwar",
+    "defaultTitle": "Garvit Buildtech | Real Estate Projects in Haridwar",
     "titleTemplate": "%s | Garvit Buildtech",
-    "defaultDescription": "Garvit Buildtech develops premium residential plots and farm houses in Haridwar, Uttarakhand.",
-    "canonicalBase": "https://yourdomain.com",
-    "ogImage": "/images/og-default.jpg"
+    "defaultDescription": "Garvit Buildtech is a Haridwar-based real estate developer creating residential plot townships and farm house communities in Uttarakhand — including Palm City and Vantara Farms.",
+    "canonicalBase": "https://garvitbuildtech.com",
+    "ogImage": "/images/hero/home-hero.jpg"
   },
   "featureFlags": {
     "showTestimonials": false,
