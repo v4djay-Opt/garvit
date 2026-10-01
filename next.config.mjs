@@ -1,5 +1,3 @@
-import type { NextConfig } from "next";
-
 // ─── Static CSP (PRD §15.1) ──────────────────────────────────────────────────
 // Delivered as a static header — NOT generated per-request via middleware —
 // so that all content routes remain statically prerendered and CDN-cacheable.
@@ -79,7 +77,8 @@ const SECURITY_HEADERS = [
 ];
 
 // ─── Next.js config ───────────────────────────────────────────────────────────
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   // The local preview proxy uses 127.0.0.1 rather than localhost.
   allowedDevOrigins: ["127.0.0.1"],
   // Minimal standalone output for VPS deployment (PM2 + Nginx, PRD §14).
