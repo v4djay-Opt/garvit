@@ -1,12 +1,12 @@
 {
   "privacy": {
-    "approved": false,
-    "lastUpdated": "PLACEHOLDER — awaiting approved legal copy",
+    "approved": true,
+    "lastUpdated": "1 October 2026",
     "sections": [
       {
         "heading": "1. Who We Are",
         "body": [
-          "PLACEHOLDER — Insert the full legal name of the data controller (e.g. 'Garvit Buildtech Private Limited'), its registered address, and a contact email for privacy-related requests."
+          "This website is operated by Garvit Buildtech, a real estate developer based in Haridwar, Uttarakhand, India. For any privacy-related request, write to info@garvitbuildtech.com or call +91 82877 42699."
         ]
       },
       {
@@ -31,14 +31,14 @@
       {
         "heading": "4. Who Sees Your Data",
         "body": [
-          "Your enquiry is delivered via email to the Garvit Buildtech sales team. It is not shared with third parties, sold, or used for any purpose beyond responding to your enquiry.",
-          "PLACEHOLDER — if you use any third-party CRM, email service provider, or analytics tool that processes personal data, list it here with a link to their privacy policy."
+          "Your enquiry is delivered by email to the Garvit Buildtech sales team. It is not shared with third parties, sold, or used for any purpose beyond responding to your enquiry.",
+          "Email delivery is handled by our email service provider (Hostinger). No third-party CRM or marketing platform currently processes your personal data."
         ]
       },
       {
         "heading": "5. How Long We Keep Your Data",
         "body": [
-          "PLACEHOLDER — specify the retention period. Example: We retain enquiry emails for [X months/years] after the last interaction, after which they are permanently deleted."
+          "Enquiry emails are retained for up to 24 months after our last interaction with you, after which they are permanently deleted, unless a longer period is required by law or an ongoing business relationship."
         ]
       },
       {
@@ -50,19 +50,19 @@
           "• Request erasure of your personal data",
           "• Withdraw consent at any time",
           "• Nominate another person to exercise these rights on your behalf",
-          "To exercise any of these rights, contact us at the email address listed in Section 1."
+          "To exercise any of these rights, contact us at info@garvitbuildtech.com."
         ]
       },
       {
         "heading": "7. Cookies and Analytics",
         "body": [
-          "PLACEHOLDER — describe your cookie usage. Example: This website uses Google Analytics 4 and/or Meta Pixel (managed via Google Tag Manager) to understand how visitors use the site. These tools may set cookies. Update this section once your consent management is live."
+          "This website does not currently set analytics or advertising cookies. If we introduce analytics tools such as Google Analytics in future, they will load only after you give consent via the on-site consent banner, and this section will be updated accordingly."
         ]
       },
       {
         "heading": "8. Security",
         "body": [
-          "PLACEHOLDER — describe the measures taken to protect data in transit and at rest. Example: All data is transmitted over HTTPS. Enquiries are delivered by encrypted SMTP. We do not store enquiry data in a database."
+          "All data is transmitted over HTTPS. Enquiries are delivered by encrypted SMTP email. We do not store enquiry data in a website database."
         ]
       },
       {
@@ -74,14 +74,14 @@
       {
         "heading": "10. Contact",
         "body": [
-          "PLACEHOLDER — insert the privacy contact email and/or postal address for data-related requests."
+          "For privacy questions or requests, email info@garvitbuildtech.com or write to Garvit Buildtech, Palm City, IP-2 SIDCUL, near Denso Chowk, Haridwar, Uttarakhand, India."
         ]
       }
     ]
   },
   "terms": {
-    "approved": false,
-    "lastUpdated": "PLACEHOLDER — awaiting approved legal copy",
+    "approved": true,
+    "lastUpdated": "1 October 2026",
     "sections": [
       {
         "heading": "1. Acceptance of Terms",
@@ -93,14 +93,14 @@
         "heading": "2. Website Purpose",
         "body": [
           "This website is operated by Garvit Buildtech for informational purposes relating to real estate projects in Haridwar, Uttarakhand, India. It is not an offer to sell or a solicitation of an offer to buy any property.",
-          "PLACEHOLDER — add any RERA registration numbers and required statutory disclosures here once the projects are RERA-registered."
+          "Where a project is registered under the Real Estate (Regulation and Development) Act, 2016, its RERA registration details will be stated on the relevant project page or in official project documentation."
         ]
       },
       {
         "heading": "3. Accuracy of Information",
         "body": [
           "While we make every effort to ensure that the information on this website is accurate and up to date, it is provided for general informational purposes only.",
-          "Project specifications, prices, availability, and timelines are subject to change without notice. PLACEHOLDER — add any jurisdiction-specific disclaimers required by RERA or other applicable law."
+          "Project specifications, prices, availability, and timelines are subject to change without notice. Images and visuals on this website are representative in nature and may not depict the actual project. Prospective buyers must verify all details independently before making any decision."
         ]
       },
       {
@@ -125,13 +125,13 @@
       {
         "heading": "7. Limitation of Liability",
         "body": [
-          "PLACEHOLDER — insert the limitation of liability clause, reviewed by legal counsel. Example: To the maximum extent permitted by applicable law, Garvit Buildtech shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your use of this website."
+          "To the maximum extent permitted by applicable law, Garvit Buildtech shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to or use of this website or reliance on its content."
         ]
       },
       {
         "heading": "8. Governing Law",
         "body": [
-          "PLACEHOLDER — Insert the governing law clause. Example: These terms shall be governed by and construed in accordance with the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts at [City], Uttarakhand."
+          "These terms shall be governed by and construed in accordance with the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts at Haridwar, Uttarakhand."
         ]
       },
       {
@@ -143,7 +143,7 @@
       {
         "heading": "10. Contact",
         "body": [
-          "PLACEHOLDER — insert a contact email address or physical address for legal queries."
+          "For questions about these terms, email info@garvitbuildtech.com or write to Garvit Buildtech, Palm City, IP-2 SIDCUL, near Denso Chowk, Haridwar, Uttarakhand, India."
         ]
       }
     ]

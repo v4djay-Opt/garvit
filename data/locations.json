@@ -1,22 +1,23 @@
 [
   {
-    "_notice": "PLACEHOLDER — replace with verified content before publishing. All landmark distances must be verified before setting verified:true.",
     "id":         "haridwar-main",
-    "heading":    "PLACEHOLDER — Haridwar story heading.",
-    "subheading": "PLACEHOLDER — subheading.",
+    "heading":    "Haridwar — where the plains meet the foothills",
+    "subheading": "A city of pilgrimage, industry, and growing connectivity.",
     "body": [
-      "PLACEHOLDER — paragraph about Haridwar's connectivity, lifestyle, infrastructure and natural setting. All factual claims must be verified by Garvit Buildtech before publishing.",
-      "PLACEHOLDER — second paragraph."
+      "Haridwar sits on the banks of the Ganges at the point where the river enters the plains. As the traditional gateway to the Char Dham circuit, it has always drawn people — and today it is equally defined by the SIDCUL industrial estate, expanding infrastructure, and a steady stream of new residents.",
+      "The city connects by NH 34 toward Delhi and Dehradun, by rail from Haridwar Junction, and by air via Jolly Grant Airport near Dehradun. For homebuyers and investors, that mix of spiritual identity and practical connectivity is what makes Haridwar different from a typical tier-2 market."
     ],
     "image": {
-      "src":    "/images/placeholder-haridwar.jpg",
-      "alt":    "Representative photograph of a Himalayan valley.",
+      "src":    "/images/haridwar.jpg",
+      "alt":    "Representative photograph of a Himalayan valley landscape near Haridwar.",
       "width":  1200,
       "height": 800
     },
     "highlights": [
-      "PLACEHOLDER — connectivity highlight (verify before publishing)",
-      "PLACEHOLDER — infrastructure highlight (verify before publishing)"
+      "NH 34 corridor — Delhi & Dehradun connectivity",
+      "SIDCUL industrial estate within the city",
+      "Haridwar Junction railway station",
+      "Jolly Grant Airport, Dehradun"
     ]
   }
 ]
