@@ -78,7 +78,7 @@ export function ProjectHero({ project }: ProjectHeroProps) {
           inset: 0,
           zIndex: 1,
           background:
-            "linear-gradient(to top, rgba(20,17,15,0.92) 0%, rgba(20,17,15,0.3) 45%, transparent 70%)",
+            "linear-gradient(to top, rgba(20,17,15,0.95) 0%, rgba(20,17,15,0.72) 30%, rgba(20,17,15,0.4) 55%, rgba(20,17,15,0.12) 75%, transparent 90%)",
           pointerEvents: "none",
         }}
       />
@@ -180,6 +180,7 @@ export function ProjectHero({ project }: ProjectHeroProps) {
             letterSpacing: "-0.03em",
             lineHeight: 0.95,
             color: "var(--color-bone)",
+            textShadow: "0 2px 24px rgba(20,17,15,0.55), 0 1px 6px rgba(20,17,15,0.4)",
             maxWidth: "16ch",
             marginBottom: "1.25rem",
           }}
@@ -195,7 +196,8 @@ export function ProjectHero({ project }: ProjectHeroProps) {
                 fontSize: "clamp(1rem, 1.4vw, 1.25rem)",
                 fontWeight: 300,
                 lineHeight: 1.65,
-                color: "var(--color-bone-muted)",
+                color: "var(--color-bone)",
+                textShadow: "0 1px 14px rgba(20,17,15,0.6)",
                 maxWidth: "44ch",
               }}
             >

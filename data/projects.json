@@ -25,25 +25,46 @@
       },
       "gallery": [
         {
-          "src": "/projects/palm-city-haridwar/gallery-1.webp",
-          "alt": "Representative photograph of a modern home exterior.",
-          "width": 1400,
-          "height": 933,
-          "caption": "Representative photograph — not project imagery"
+          "src": "/projects/palm-city-haridwar/site-1.webp",
+          "alt": "Palm City — internal concrete road with hedge-lined plot parcels",
+          "width": 960,
+          "height": 1280
         },
         {
-          "src": "/projects/palm-city-haridwar/gallery-2.webp",
-          "alt": "Representative photograph of a suburban residence.",
-          "width": 1400,
-          "height": 1050,
-          "caption": "Representative photograph — not project imagery"
+          "src": "/projects/palm-city-haridwar/site-2.webp",
+          "alt": "Palm City — landscaped lawn and planted garden area within the township",
+          "width": 960,
+          "height": 1280
         },
         {
-          "src": "/projects/palm-city-haridwar/gallery-3.webp",
-          "alt": "Representative aerial photograph of a residential neighbourhood.",
-          "width": 1185,
-          "height": 896,
-          "caption": "Representative photograph — not project imagery"
+          "src": "/projects/palm-city-haridwar/site-3.webp",
+          "alt": "Palm City — internal road view with boundary kerbs and site office building",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "src": "/projects/palm-city-haridwar/site-4.webp",
+          "alt": "Palm City — internal road stretch with the site water tower in the distance",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "src": "/projects/palm-city-haridwar/site-5.webp",
+          "alt": "Palm City — internal road toward the township entry gate",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "src": "/projects/palm-city-haridwar/site-6.webp",
+          "alt": "Palm City — hedge boundary and internal road inside the development",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "src": "/projects/palm-city-haridwar/site-7.webp",
+          "alt": "Palm City — open residential plot parcels alongside the internal road",
+          "width": 960,
+          "height": 1280
         }
       ]
     },
@@ -55,11 +76,10 @@
         "Its project website lists gated access, internal roads, landscaped parks and utility connections. Choose a plot size to suit your home plans and arrange a visit to explore the development."
       ],
       "image": {
-        "src": "/projects/palm-city-haridwar/listing.webp",
-        "alt": "Representative photograph of a contemporary residence.",
-        "width": 1180,
-        "height": 896,
-        "caption": "Representative photograph — not project imagery"
+        "src": "/projects/palm-city-haridwar/site-2.webp",
+        "alt": "Palm City — landscaped lawn and planted garden area within the township",
+        "width": 960,
+        "height": 1280
       }
     },
     "highlights": [
@@ -183,11 +203,10 @@
     "positioningStatement": "Farm houses near Haridwar, designed around private living spaces and green surroundings.",
     "media": {
       "heroImage": {
-        "src": "/projects/vantara-farms/listing.webp",
-        "alt": "Representative photograph of a contemporary house at dusk.",
-        "width": 1400,
-        "height": 933,
-        "caption": "Representative photograph"
+        "src": "/projects/vantara-farms/hero.webp",
+        "alt": "Vantara Farms — illuminated entry gate with landscaped planting and palm-lined drive",
+        "width": 1024,
+        "height": 409
       },
       "gallery": [
         {
@@ -348,12 +367,49 @@
     "positioningStatement": "A planned residential address in the SIDCUL corridor, with five plot-size options.",
     "media": {
       "heroImage": {
-        "src": "/images/concepts/plots-v1.webp",
-        "alt": "Representative photograph of open farmland; not a photograph of Palm Street Phase 02.",
-        "width": 960,
-        "height": 1200,
-        "caption": "Representative photograph — not project imagery"
-      }
+        "src": "/projects/palm-street-phase-02/hero.webp",
+        "alt": "Palm Street Phase 02 — palm-tree lined internal road through the plotted development, with hills on the horizon",
+        "width": 1024,
+        "height": 512
+      },
+      "gallery": [
+        {
+          "src": "/projects/palm-street-phase-02/site-1.webp",
+          "alt": "Palm Street Phase 02 — young palm trees planted along the internal road verge, with marked plot parcels",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/projects/palm-street-phase-02/site-2.webp",
+          "alt": "Palm Street Phase 02 — wide internal concrete road lined with palm trees through the plotted development",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/projects/palm-street-phase-02/site-3.webp",
+          "alt": "Palm Street Phase 02 — internal road with streetlight poles and palms, hills visible on the horizon",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/projects/palm-street-phase-02/site-4.webp",
+          "alt": "Palm Street Phase 02 — internal road and plot parcels within the development",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/projects/palm-street-phase-02/site-5.webp",
+          "alt": "Palm Street Phase 02 — palm-lined internal road through the plotted layout",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/projects/palm-street-phase-02/site-6.webp",
+          "alt": "Palm Street Phase 02 — open plot parcels and internal road with surrounding greenery",
+          "width": 1200,
+          "height": 1600
+        }
+      ]
     },
     "story": {
       "eyebrow": "Residential plots",
